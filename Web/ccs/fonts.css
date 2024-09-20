@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-Thin.ttf") format("truetype");
+    font-size: 200;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-Black.ttf") format("truetype");
+    font-size: 400;
+}
