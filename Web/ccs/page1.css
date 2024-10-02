@@ -6,14 +6,14 @@ h1 {
     text-align: center;
     width: 90%;
     height: 50px;
-    background: rgb(240, 194, 161);
+    background:  rgb(220, 204, 178);
     padding: 10px 0 10px 0;
-    border-width: 5px;
+    border-width: 2.5px;
     border-color: rgb(157, 97, 59);
     border-style: solid;
     margin: auto;
     border-radius: 15%;
-    box-shadow: 20px 20px 50px rgb(127, 114, 90);
+    box-shadow: 2px 2px 5px rgb(127, 114, 90);
 }
 h2 {
     color:rgb(117, 63, 25);

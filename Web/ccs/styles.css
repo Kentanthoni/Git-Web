@@ -6,15 +6,19 @@ h1 {
     text-align: center;
     width: 90%;
     height: 50px;
-    background: rgb(240, 194, 161);
+    background:  rgb(220, 204, 178);
     padding: 10px 0 10px 0;
-    border-width: 5px;
+    border-width: 2.5px;
     border-color: rgb(141, 104, 81);
     border-style: solid;
     margin: auto;
     margin-top: 25px;
     border-radius: 15%;
-    box-shadow: 20px 20px 50px rgb(127, 114, 90);
+    box-shadow: 2px 2px 5px rgb(127, 114, 90);
+}
+a {
+    color: #69f;
+    text-decoration: none;
 }
 .titles {
     color:rgb(117, 63, 25);
@@ -57,28 +61,74 @@ span {
 input {
     width: 95%;
 }
+.contact {
+    color:rgb(117, 63, 25);
+    letter-spacing: 1.5px;
+    font-family:Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
 .forms {
     width: 50%;
-    background: rgb(233, 216, 189); 
+    background: transparent; 
     padding: 20px;
     margin:auto;
-    box-shadow: 0 0 30px;
+    box-shadow: 0 0 20px rgb(128, 128, 128);
     border-radius: 10px;
+    max-width: 500px;
+    font-size: 12px;
+
 }
-.form-input {
+.form-input, textarea, select {
     padding: 10px;
-    background: rgb(237, 218, 190);
-    margin: 5px;
-    border-bottom: 1px solid black;
-    border-radius: 10px;
+    background: transparent;
+    margin: 8px;
+    border-left: 1px solid black;
+    border-radius: 5px;
     color: rgb(117, 63, 25);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px rgb(128, 128, 128);
+    width: 95%;
 }
+
 .submit {
     letter-spacing: 2px;
     text-transform: uppercase;
-    background: rgb(222, 184, 135);
+    background: rgb(233, 216, 189);
     width: 40%;
     margin-left: 30%;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+textarea {
+    min-width: 95%;
+    resize: none;
+    min-height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(117, 63, 25);
+    font-size: 12px;
+}
+label, legend {
+    font-size: 0.9em;
+    line-height: 2;
+    color: rgb(117, 63, 25);
+    font-size: 12px;
+}
+.checkbox {
+    width: auto;
+    height: 10px;
+}
+option {
+    background: rgb(233, 216, 189);
+}
+fieldset {
+    margin: 15px 0;
+    border: 1px solid rgb(117, 63, 25);
+    border-radius: 5px;
 }
 body {
     background: linear-gradient(to right, rgb(220, 204, 178), transparent, rgb(220, 204, 178));
