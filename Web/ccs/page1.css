@@ -40,6 +40,8 @@ h2 {
     line-height: 1.5;
     letter-spacing: 1.5px;
     list-style-type: square;
+    position: sticky;
+    z-index: 30;
 }
 .line1 {
     background:burlywood;
@@ -60,25 +62,18 @@ body {
     background: linear-gradient(to right, rgb(209, 194, 170), transparent);
     margin: 0;
 }
-img[src="images/Image1.jpg"] {
-    width: 350px;
-    border-radius: 100%;
-    margin-left: 150px;
-    box-shadow: 0 0 8px 0 rgb(5, 5, 5);
-}
 a:link {
     color: #69f;
     text-decoration: none;
 }
 a:visited {
-    color: rgb(35, 61, 113);
+    color: #68f;
     text-decoration: none;
 }
 .back {
     display: block;
     margin: 20px;
     padding: 20px;
-    border: 1px solid rgb(152, 125, 100);
     width: 40px;
 }
 td, th {
@@ -95,11 +90,57 @@ table {
     border: 2px solid rgb(177, 155, 140);
     max-width: 500px;
     margin: auto;
-    box-shadow: 0 0 5px rgb(125, 125, 128) ;
+    box-shadow: 0 0 5px rgb(125, 125, 128);
+}
+table:hover {
+    outline: 5px double rgb(117, 63, 25);
+    outline-offset: 5px;
+    transition: outline 0.2s, outline-offset 0.2s;
 }
 .technologies::first-letter {
     font-size: 25px;
 }
 *::selection {
     background: rgb(200, 198, 202);
+}
+.box {
+    height: 20px;
+    width: 100%;
+    background-color: rgb(52, 36, 0);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    text-align: left;
+}
+.textend {
+    font-size: 10px;
+    margin: auto;
+    padding-top: 5px;
+    margin-left: 50px;
+    color: #fff;
+    font-family: sans-serif;
+}
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    text-align: center;
+    font-size: 20px;
+    color: #7d6000;
+}
+.flex-item {
+    height: 60px;
+    width: 180px;
+    background-color: rgb(76, 120, 106);
+    margin: 10px;
+    direction: rtl;
+    flex: 1 0 auto;
+}
+img {
+    border-radius: 100%;
+    width: 130px;
+    height: 100px;
+    box-shadow: 0 0 20px gray;
 }

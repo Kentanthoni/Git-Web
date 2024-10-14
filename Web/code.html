@@ -61,3 +61,69 @@
     
     </body>
 </html>
+
+<!--Information about company-->
+<h2 class="titles">Who are we?</h2>
+<div class="card card--1">
+<img loading="lazy" class="image_card" src="images/Image-card.jpg" alt="">
+<h2 class="card_title">KENT ANTHONI ROMAN</h2>
+<h3 class="descriptions">ENGINEER AND PROGRAMMER</h3>
+<p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam eius earum similique ullam soluta perspiciatis quod veritatis iusto at delectus rem dolores a beatae ab eum cum ex, necessitatibus quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt quos, aliquam, reprehenderit dolorem atque, consequatur est reiciendis quibusdam officiis quisquam fugit. Atque earum delectus possimus placeat sequi corporis quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</div>
+<div class="card card--2">
+<img loading="lazy" class="image_card" src="images/LOBOC.png" alt="">
+<h2 class="card_title">RICARDO MALO WALKER</h2>
+<h3 class="descriptions">ENGINEER AND PROGRAMMER</h3>
+<p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam eius earum similique ullam soluta perspiciatis quod veritatis iusto at delectus rem dolores a beatae ab eum cum ex, necessitatibus quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sunt quos, aliquam, reprehenderit dolorem atque, consequatur est reiciendis quibusdam officiis quisquam fugit. Atque earum delectus possimus placeat sequi corporis quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</div>
+
+<!--Information of the client-->
+<div>
+    <h3 class="data">Insert your data</h3>
+</div>
+<form class="forms">
+    <h3 class="contact">Contact form</h3>
+    <fieldset>
+        <legend>BASIC INFORMATION</legend>
+        <div>
+            <label for="name">Full name</label>
+            <input class="form-input" placeholder="Nick Richarson" name="username" required id="name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input class="form-input" type="email" placeholder="exapmle@gmail.com" name="email" required id="email">
+        </div>
+    </fieldset>
+    <div>
+        <label for="date">Date</label>
+        <input class="form-input" type="date" id="date">
+    </div> 
+    <div>
+        <label>Type of user</label>
+        <select name="type-of-user">
+            <option value="user1">Option 1: Follower</option>
+            <option value="user2">Option 2: Company</option>
+            <option value="user3">Option 3: Others</option>
+        </select> 
+    </div>
+    <div>
+        <label>Reference</label>
+        <input class="form-input" list="reference" name="reference">
+        <datalist id="reference" name="type-of-user">
+            <option value="user1">I am a student</option>
+            <option value="user2">I am a proffesor</option>
+        </datalist>
+    </div>  
+    <div>
+        <label for="message">Message</label>
+        <textarea rows="8" placeholder="client description..." id="message"></textarea>
+    </div>  
+    <div>
+        <label>Accept <a href="terms.html" target="_blank">terms and conditions</a>
+            <input class="checkbox" type="checkbox">
+        </label>
+    </div>
+    <div>
+        <input class="form-input submit" type="submit" value="Send">
+    </div>   
+</form>

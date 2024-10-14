@@ -1,20 +1,48 @@
+body {
+    background: linear-gradient(to right, rgb(220, 204, 178), transparent, rgb(220, 204, 178));
+    margin: 0;
+    box-sizing: border-box;
+}
+body, div, header, nav, ul,h1, h2, p, img {
+    box-sizing: border-box;
+}
 h1 {
     color:rgb(157, 97, 59);
     letter-spacing: 1.5px;
     font-family:Montserrat, Arial, Helvetica, sans-serif;
     font-weight: 800;
     text-align: center;
-    width: 90%;
-    height: 50px;
-    background:  rgb(220, 204, 178);
-    padding: 10px 0 10px 0;
-    border-width: 2.5px;
-    border-color: rgb(141, 104, 81);
-    border-style: solid;
+    margin: 0;
+    font-size: 3.6rem;
+    text-wrap: balance;
+}
+.text {
+    margin: 10px;
+    color: rgb(66, 34, 12);
+}
+.header {
+    min-height: 100vh;
+    box-sizing: border-box;
+    background: url("/images/fondo.jpg");
+    display: flex;
+    background-size: cover;
+}
+.header__overlay {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(136, 136, 136, 0.4);
+    position: absolute;
+    z-index: 1;
+}
+.header__item-container {
+    position: relative;
+    z-index: 10;
     margin: auto;
-    margin-top: 25px;
-    border-radius: 15%;
-    box-shadow: 2px 2px 3px rgb(127, 114, 90);
+    text-align: center;
+    max-width: 700px;
+}
+.header__item-container p {
+    text-wrap: pretty;
 }
 h1:hover {
     color: rgb(117, 63, 25);
@@ -22,6 +50,7 @@ h1:hover {
 h1:active {
     color: rgb(71, 69, 69);
 }
+
 a {
     color: #69f;
     text-decoration: none;
@@ -81,7 +110,6 @@ input {
     border-radius: 10px;
     max-width: 500px;
     font-size: 12px;
-
 }
 .form-input, textarea, select {
     padding: 10px;
@@ -129,10 +157,6 @@ fieldset {
     border: 1px solid rgb(117, 63, 25);
     border-radius: 5px;
 }
-body {
-    background: linear-gradient(to right, rgb(220, 204, 178), transparent, rgb(220, 204, 178));
-    margin: 0;
-}
 .card {
     text-align: center;
     width: 300px;
@@ -149,6 +173,7 @@ body {
 }
 .card--2 {
     background: rgb(222, 170, 103);
+    margin-bottom: 50px;
 }
 .card_title {
     font-size: 22px;
@@ -181,37 +206,76 @@ body {
 }
 .nav {
     background-color: rgb(177, 148, 109);
-    box-shadow: 2px 2px 3px rgb(127, 114, 90);
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 6 20px;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    box-shadow: 0 0 25px #0006;
 }
 .nav__list {
     margin: 0;
-    text-align: end;
-    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
 }
 .nav__item {
-    display: inline-block;
+    list-style: none;
 }
 .nav__link {
     color: #fff;
     text-decoration: none;
     display: inline-block;
-    padding: 10px;
-    margin-left: 15px;
+    padding: 8px 10px;
+    margin: 2px;
     background-color: rgb(177, 148, 109);
+    border-radius: 0;
+    transition: background-color 0.24s, border-radius 0.2s, outline 0.2s, outline-offset 0.2s;
+    outline: 0;
+    outline-offset: 0;
 }
 .nav__link:hover {
     background-color: rgb(152, 125, 100);
+    border-radius: 20px;
+    outline: 2px solid rgb(152, 125, 100);
+    outline-offset: -7px;
 }
 .link--button {
     border: 1px solid #fff;
     background-color: #fff;
-    padding: 6px 12px;
-    color: rgb(122, 90, 63);
-    border-radius: 3px;
+    padding: 8px 24px;
+    color: rgb(152, 125, 100);
+    border-radius: 20px;
     margin-left: 60px;
 }
 .link--button:hover {
     background-color: transparent;
     color: #fff;
+    outline: none;
+}
+.box {
+    height: 20px;
+    width: 100%;
+    background-color: rgb(52, 36, 0);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    text-align: left;
+}
+.textend {
+    font-size: 10px;
+    margin: auto;
+    padding-top: 5px;
+    margin-left: 50px;
+    color: #fff;
+    font-family: sans-serif;
+    font-style: italic;
+    letter-spacing: 1.5px;
+}
+.data-information {
+    position: absolute;
 }
