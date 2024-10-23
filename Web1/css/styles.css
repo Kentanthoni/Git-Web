@@ -53,6 +53,9 @@ aside, main {
     flex-basis: 0;
     background-color: #fff;
 }
+aside {
+    position: static;
+}
 main {
     min-width: 300px;
     flex-grow: 1;
@@ -107,5 +110,10 @@ footer {
 @media screen and (min-width: 800px){    
     aside:last-child {
         display: block;
+    }
+    aside {
+        position:  sticky;
+        top: 0;
+        height: 100vh;
     }
 } 
