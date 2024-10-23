@@ -317,6 +317,9 @@ h1 {
     background-color: #48e;
     color: #fff;
 }
+.form__input-container input[type="submit"]:hover {
+    background-color: #273b6b;
+}
 .form__title {
     font-size: 2.6rem;
 }
