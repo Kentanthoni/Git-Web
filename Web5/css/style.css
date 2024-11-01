@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    --bg-color: rgb(229, 157, 229);
+    --text-color: #333;
+    --faq-color: #fff;
+    --dark-color: rgb(139, 51, 139);
+}
+body,div,ul,li,a,h1,h2,h3,h4,p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--bg-color);
+}
+.faq {
+    max-width: clamp(300px, 70%, 700px);
+    margin: auto;
+}
+.faq details {
+    background-color: var(--faq-color);
+    margin: 7px;
+    padding: 7px;
+}
+summary {
+    user-select: none;
+    position: relative;
+}
+.content {
+    padding: 5px 10px;
+    border-top: 1px solid var(--bg-color);
+    padding-top: 5px;
+    margin: 10px;
+    margin-bottom: 0;
+    font-size: .8rem;
+    color: var(--text-color);
+}
+summary::marker {
+    content: '';
+}
+summary::before {
+    content: '+';
+    position: absolute;
+    right: 0;
+    color: var(--dark-color);
+    content: '+';
+    font-weight: 900;
+}
+details[open] summary::before {
+    content: '-';
+}
+details b {
+    background-color: var(--dark-color);
+    padding: 1px 3px;
+    color: #fff;
+}
