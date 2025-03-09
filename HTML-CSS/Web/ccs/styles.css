@@ -23,7 +23,7 @@ h1 {
 .header {
     min-height: 100vh;
     box-sizing: border-box;
-    background: url("/images/fondo.jpg");
+    background: url("/HTML-CSS/Web/images/fondo.jpg");
     display: flex;
     background-size: cover;
 }

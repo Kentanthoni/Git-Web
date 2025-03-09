@@ -1,0 +1,202 @@
+/* Estilos generales */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fondo para el encabezado */
+.header-background {
+    background-color: #355a80;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-text {
+    flex: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #ecf0f1;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.contacto ul li, .educacion ul li, .experiencia ul li, .habilidades ul li, .reconocimiento ul li, .proyectos ul li {
+    padding: 2px 0;
+}
+
+.experiencia h3, .educacion h3, .reconocimiento h3, .proyectos h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.experiencia p, .educacion p, .reconocimiento p, .proyectos p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.contact-columns {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-columns ul {
+    flex: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-columns ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-columns ul li i {
+    font-size: 1.2em;
+    color: #3b82f6;
+}
+
+.contact-columns ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-columns ul li a:hover {
+    text-decoration: underline;
+}
+
+.skills-columns {
+    display: flex;
+    gap: 20px;
+}
+
+.skills-columns ul {
+    flex: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-columns ul li {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para Work Experience, Education y Recognitions */
+.experiencia ul li, .educacion ul li, .reconocimiento ul li, .proyectos ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.experiencia ul li h3, .educacion ul li h3, .reconocimiento ul li h3, .proyectos ul li h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.experiencia ul li p, .educacion ul li p, .reconocimiento ul li p, .proyectos ul li p {
+    margin: 5px 0;
+    color: #777;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Encabezado: imagen centrada arriba del texto */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    /* Contacto: apila las columnas */
+    .contact-columns {
+        flex-direction: column;
+    }
+
+    /* Habilidades: apila las columnas */
+    .skills-columns {
+        flex-direction: column;
+    }
+}

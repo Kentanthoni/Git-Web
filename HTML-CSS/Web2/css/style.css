@@ -246,7 +246,7 @@ h1 {
     min-height: 80vh;
 }
 .portfolio__project {
-    background-image: linear-gradient(#0009, #0009), url("/images/fondo.jpg");
+    background-image: linear-gradient(#0009, #0009), url("/HTML-CSS/Web2/images/fondo.jpg");
     background-position: center;
     background-size: cover;
     display: grid;
